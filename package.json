@@ -11,9 +11,10 @@
   "license": "ISC",
   "devDependencies": {
     "babel": "^5.8.21",
+    "babel-plugin-rewire": "^0.1.20",
     "jasmine": "^2.3.2",
-    "jasmine-react": "git://github.com/tommyh/jasmine-react.git",
-    "jsdom": "^6.1.0"
+    "jsdom": "^6.1.0",
+    "rewire-webpack": "^1.0.0"
   },
   "dependencies": {
     "babel-core": "^5.8.22",

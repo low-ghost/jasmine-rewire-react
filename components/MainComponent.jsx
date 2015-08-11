@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-var SubComponent = require('./SubComponent');
+import SubComponent from './SubComponent';
 
 export default class MainComponent extends Component {
     render() {

@@ -1,5 +1,4 @@
 var webpack = require('webpack');
-var RewirePlugin = require("rewire-webpack");
 var path = require('path');
 
 var entry = ['./tests/main.js'];
@@ -16,9 +15,6 @@ var config = {
       { test: /\.jsx?$/, loaders: jsxLoaders, exclude: /node_modules/ },
     ]
   },
-    plugins: [
-        new RewirePlugin(),
-    ],
   resolve: {
     modulesDirectories: ['node_modules'],
     extensions: ['', '.js', '.jsx']
