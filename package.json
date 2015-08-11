@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test JASMINE_CONFIG_PATH=jasmine.json jasmine"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel": "^5.8.21",
-    "jasmine": "^2.3.2"
+    "jasmine": "^2.3.2",
+    "jsdom": "^6.1.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^5.8.20",
+    "react": "^0.13.3",
+    "react-addons": "^0.9.0"
   }
 }
