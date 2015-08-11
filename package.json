@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel": "^5.8.21",
     "jasmine": "^2.3.2"
   }
 }

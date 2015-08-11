@@ -1,6 +1,9 @@
 {
     "spec_dir": "tests",
     "spec_files": [
-        "*[sS]pec.js"
+        "index.js"
+    ],
+    "helpers": [
+        "../node_modules/jasmine-es6/lib/install.js"
     ]
 }
