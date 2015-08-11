@@ -1,14 +1,5 @@
-import { PropTypes, Component, createClass } from 'react';
+import React, { PropTypes, Component, createClass } from 'react';
 import ExecutionEnvironment from 'react/lib/ExecutionEnvironment';
-import { jsdom } from 'jsdom';
-
-//basic fake dom for react rendering
-export const jsDomReact = (markup = '<html><body></body></html>') => {
-  global.document = jsdom(markup);
-  global.window = document.defaultView;
-  global.navigator = { userAgent: 'node.js' };
-  ExecutionEnvironment.canUseDOM = true;
-}
 
 //Minimal Provider mock
 export class Provider extends Component {
@@ -25,8 +16,11 @@ export class Provider extends Component {
     }
 }
 
-export class Mock extends Component {
-    render() {
-        return <div />;;
+export const Mock = (props) => {
+    class MockComponent extends Component {
+        render() {
+            return <div {...props} />;;
+        }
     }
+    return MockComponent;
 }
